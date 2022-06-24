@@ -1,0 +1,7 @@
+import{_ as i,c as l,a as c,V as p,O as u,o as h}from"./index.0c661911.js";var _=`<h1 id="\u8054\u7CFB\u6211\u4EEC">\u8054\u7CFB\u6211\u4EEC</h1>
+<p>\u8FD9\u4E2A\u7F51\u9875\u76EE\u524D\u662F\u7531 <a href="https://twitter.com/sauricat/">Shu Lin</a> \u548C <a href="https://github.com/hykilpikonna">Hykilpikonna</a> \u5171\u540C\u7EF4\u62A4\uFF0C\u5982\u6709\u9700\u8981\u53EF\u4EE5\u901A\u8FC7\u90AE\u4EF6\u8054\u7CFB\u6211\u4EEC\uFF01\u90AE\u7BB1\u5730\u5740\u5982\u4E0B\uFF1A</p>
+<ul>
+<li>Shu: <a href="mailto:&#108;&#105;&#x6e;&#115;&#104;&#117;&#49;&#x37;&#x32;&#57;&#x40;&#112;&#114;&#111;&#116;&#x6f;&#110;&#x6d;&#x61;&#x69;&#x6c;&#46;&#99;&#111;&#x6d;">&#108;&#105;&#x6e;&#115;&#104;&#117;&#49;&#x37;&#x32;&#57;&#x40;&#112;&#114;&#111;&#116;&#x6f;&#110;&#x6d;&#x61;&#x69;&#x6c;&#46;&#99;&#111;&#x6d;</a></li>
+<li>Hykilpikonna: <a href="mailto:&#109;&#x65;&#x40;&#x68;&#x79;&#100;&#101;&#x76;&#46;&#111;&#x72;&#x67;">&#109;&#x65;&#x40;&#x68;&#x79;&#100;&#101;&#x76;&#46;&#111;&#x72;&#x67;</a></li>
+</ul>
+`,f=Object.defineProperty,d=Object.getOwnPropertyDescriptor,m=(a,e,r,n)=>{for(var t=n>1?void 0:n?d(e,r):e,x=a.length-1,o;x>=0;x--)(o=a[x])&&(t=(n?o(e,r,t):o(t))||t);return n&&t&&f(e,r,t),t};let s=class extends p{constructor(){super(...arguments),this.html=_}};s=m([u({})],s);const v=s,b={id:"About"},w=["innerHTML"];function O(a,e,r,n,t,x){return h(),l("div",b,[c("div",{class:"markdown-content",style:{margin:"10px min(4vw, 40px)"},innerHTML:a.html},null,8,w)])}var H=i(v,[["render",O]]);export{H as default};
