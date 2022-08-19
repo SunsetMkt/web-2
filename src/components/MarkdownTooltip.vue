@@ -12,11 +12,13 @@
 <script lang="ts">
 import {Options, Vue} from 'vue-class-component';
 import {Prop, Ref} from "vue-property-decorator";
+import {marked} from "marked";
 
 interface TooltipAction {
     name: string
     icon: string
     md: string
+    type: string
     // is: (text: string, start: number, end: number) => boolean
 }
 
@@ -24,12 +26,12 @@ interface TooltipAction {
 export default class MarkdownTooltip extends Vue
 {
     actions: TooltipAction[] = [
-        {name: '加粗',   icon: 'fa-solid fa-bold',          md: '**'},
-        {name: '斜体',   icon: 'fa-solid fa-italic',        md: '__'},
+        {name: '加粗',   icon: 'fa-solid fa-bold',          md: '**', type: 'strong'},
+        {name: '斜体',   icon: 'fa-solid fa-italic',        md: '_', type: 'em'},
         // {name: '下划线', icon: 'fa-solid fa-underline',     md: '--'},
-        {name: '划掉',   icon: 'fa-solid fa-strikethrough', md: '~~'},
-        {name: '代码',   icon: 'fa-solid fa-code',          md: '`'},
-        {name: '黑幕',   icon: 'fa-solid fa-eye-slash',     md: '||'},
+        {name: '划掉',   icon: 'fa-solid fa-strikethrough', md: '~~', type: 'del'},
+        {name: '代码',   icon: 'fa-solid fa-code',          md: '`', type: 'codespan'},
+        {name: '黑幕',   icon: 'fa-solid fa-eye-slash',     md: '||', type: 'spoiler'},
     ]
 
     @Ref() el!: HTMLElement
@@ -38,6 +40,7 @@ export default class MarkdownTooltip extends Vue
     @Prop() textAreaId!: string
     textAreaEl: HTMLTextAreaElement
     selectedArea?: {start: number, end: number} = null
+    presentMarkdown = []
 
     mounted()
     {
@@ -72,6 +75,30 @@ export default class MarkdownTooltip extends Vue
 
         this.selectedArea = {start: tel.selectionStart, end: tel.selectionEnd}
         this.el.classList.add('show')
+
+
+        // Debug
+        let {start, end} = this.selectedArea
+        let txt = this.textAreaEl.value
+        let sel = txt.substring(start, end)
+        console.log(marked.lexer(sel))
+    }
+
+    updatePresentMarkdown()
+    {
+        let {start, end} = this.selectedArea
+        let txt = this.textAreaEl.value
+
+        // Check if start, end is in the range of a non-text token
+        let tokens = marked.lexer(txt.substring(0, start))
+        let startI = 0
+        for (const token of tokens)
+        {
+            let endI = startI + token.raw.length
+            if (startI < start && endI > end) return
+
+            startI = endI
+        }
     }
 
     apply(e: UIEvent, act: TooltipAction)

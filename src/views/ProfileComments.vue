@@ -10,6 +10,8 @@
             </p>
         </div>
 
+        <div>预览：<span v-html="mdRender(textInput)"></span></div>
+
         <div id="add-comment">
             <textarea id="comment-textarea" v-model="textInput" placeholder="添加留言... （支持 Markdown 哦！"
                       @input="resizeInput" ref="input"/>
@@ -27,7 +29,7 @@
 
 <script lang="ts">
 import {Options, Vue} from 'vue-class-component';
-import {Prop} from "vue-property-decorator";
+import {Prop, Ref} from "vue-property-decorator";
 import {Person} from "@/logic/data";
 import SubmitPrompt, {CaptchaResponse} from "@/components/SubmitPrompt.vue";
 import {ElMessage} from "element-plus/es";
@@ -50,6 +52,8 @@ export default class ProfileComments extends Vue
     private textInputKey: string
 
     showCaptchaPrompt = false
+
+    mdRender(md: string) {return mdParseInline(md)}
 
     get comments()
     {
