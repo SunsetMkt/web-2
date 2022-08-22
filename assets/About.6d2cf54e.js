@@ -1,0 +1,7 @@
+import{_ as i,c,a as l,V as p,O as u,o as f}from"./index.6c65e9fb.js";var h=`<h1 id="\u8054\u7CFB\u6211\u4EEC">\u8054\u7CFB\u6211\u4EEC</h1>
+<p>\u8FD9\u4E2A\u7F51\u9875\u76EE\u524D\u662F\u7531 <a href="https://twitter.com/sauricat/">Shu Lin</a> \u548C <a href="https://github.com/hykilpikonna">Hykilpikonna</a> \u5171\u540C\u7EF4\u62A4\uFF0C\u5982\u6709\u9700\u8981\u53EF\u4EE5\u901A\u8FC7\u90AE\u4EF6\u8054\u7CFB\u6211\u4EEC\uFF01\u90AE\u7BB1\u5730\u5740\u5982\u4E0B\uFF1A</p>
+<ul>
+<li>Shu: <a href="mailto:&#x6c;&#x69;&#x6e;&#x73;&#104;&#x75;&#49;&#x37;&#x32;&#x39;&#64;&#x70;&#114;&#111;&#x74;&#x6f;&#x6e;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;">&#x6c;&#x69;&#x6e;&#x73;&#104;&#x75;&#49;&#x37;&#x32;&#x39;&#64;&#x70;&#114;&#111;&#x74;&#x6f;&#x6e;&#x6d;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;</a></li>
+<li>Hykilpikonna: <a href="mailto:&#x6d;&#x65;&#x40;&#x68;&#x79;&#x64;&#x65;&#x76;&#x2e;&#111;&#114;&#x67;">&#x6d;&#x65;&#x40;&#x68;&#x79;&#x64;&#x65;&#x76;&#x2e;&#111;&#114;&#x67;</a></li>
+</ul>
+`,d=Object.defineProperty,_=Object.getOwnPropertyDescriptor,m=(n,e,a,t)=>{for(var x=t>1?void 0:t?_(e,a):e,r=n.length-1,o;r>=0;r--)(o=n[r])&&(x=(t?o(e,a,x):o(x))||x);return t&&x&&d(e,a,x),x};let s=class extends p{constructor(){super(...arguments),this.html=h}};s=m([u({})],s);const v=s,b={id:"About"},w=["innerHTML"];function O(n,e,a,t,x,r){return f(),c("div",b,[l("div",{class:"markdown-content",style:{margin:"10px min(4vw, 40px)"},innerHTML:n.html},null,8,w)])}var H=i(v,[["render",O]]);export{H as default};
