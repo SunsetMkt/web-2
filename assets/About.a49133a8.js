@@ -1,0 +1,13 @@
+var r=Object.defineProperty;var c=(t,x,a)=>x in t?r(t,x,{enumerable:!0,configurable:!0,writable:!0,value:a}):t[x]=a;var s=(t,x,a)=>(c(t,typeof x!="symbol"?x+"":x,a),a);import{V as h,g as p,O as f,_ as u,c as d,a as m,o as _}from"./index.e70c759f.js";const k=`<h1 id="\u8054\u7CFB\u6211\u4EEC">\u8054\u7CFB\u6211\u4EEC</h1>
+<p>\u8FD9\u4E2A\u7F51\u9875\u76EE\u524D\u662F\u7531 <a href="https://twitter.com/sauricat/">Shu Lin</a> \u548C <a href="https://github.com/hykilpikonna">Hykilpikonna</a> \u5171\u540C\u7EF4\u62A4\uFF0C\u5982\u6709\u9700\u8981\u53EF\u4EE5\u901A\u8FC7\u90AE\u4EF6\u8054\u7CFB\u6211\u4EEC\uFF01\u90AE\u7BB1\u5730\u5740\u5982\u4E0B\uFF1A</p>
+<ul>
+<li>Shu: <a href="mailto:&#x6c;&#x69;&#110;&#115;&#x68;&#x75;&#x31;&#x37;&#50;&#57;&#64;&#x70;&#114;&#111;&#x74;&#111;&#x6e;&#x6d;&#x61;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;">&#x6c;&#x69;&#110;&#115;&#x68;&#x75;&#x31;&#x37;&#50;&#57;&#64;&#x70;&#114;&#111;&#x74;&#111;&#x6e;&#x6d;&#x61;&#x69;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a></li>
+<li>Hykilpikonna: <a href="mailto:&#109;&#x65;&#64;&#x68;&#121;&#100;&#x65;&#118;&#46;&#x6f;&#x72;&#103;">&#109;&#x65;&#64;&#x68;&#121;&#100;&#x65;&#118;&#46;&#x6f;&#x72;&#103;</a></li>
+</ul>
+`,b=`<h1 id="\u806F\u7E6B\u6211\u5011">\u806F\u7E6B\u6211\u5011</h1>
+<p>\u9019\u500B\u7DB2\u9801\u76EE\u524D\u662F\u7531 <a href="https://twitter.com/sauricat/">Shu Lin</a> \u548C <a href="https://github.com/hykilpikonna">Hykilpikonna</a> \u5171\u540C\u7DAD\u8B77\uFF0C\u5982\u6709\u9700\u8981\u53EF\u4EE5\u901A\u904E\u90F5\u4EF6\u806F\u7E6B\u6211\u5011\uFF01\u90F5\u7BB1\u5730\u5740\u5982\u4E0B\uFF1A</p>
+<ul>
+<li>Shu: <a href="mailto:&#x6c;&#x69;&#110;&#115;&#x68;&#117;&#x31;&#x37;&#50;&#x39;&#64;&#112;&#114;&#x6f;&#116;&#x6f;&#110;&#x6d;&#x61;&#105;&#x6c;&#46;&#99;&#111;&#109;">&#x6c;&#x69;&#110;&#115;&#x68;&#117;&#x31;&#x37;&#50;&#x39;&#64;&#112;&#114;&#x6f;&#116;&#x6f;&#110;&#x6d;&#x61;&#105;&#x6c;&#46;&#99;&#111;&#109;</a></li>
+<li>Hykilpikonna: <a href="mailto:&#x6d;&#101;&#x40;&#x68;&#121;&#x64;&#x65;&#118;&#46;&#111;&#114;&#103;">&#x6d;&#101;&#x40;&#x68;&#121;&#x64;&#x65;&#118;&#46;&#111;&#114;&#103;</a></li>
+</ul>
+`;var v=Object.defineProperty,H=Object.getOwnPropertyDescriptor,y=(t,x,a,e)=>{for(var n=e>1?void 0:e?H(x,a):x,i=t.length-1,o;i>=0;i--)(o=t[i])&&(n=(e?o(x,a,n):o(n))||n);return e&&n&&v(x,a,n),n};let l=class extends h{constructor(){super(...arguments);s(this,"html",p()=="zh_hans"?k:b)}};l=y([f({})],l);const g={id:"About"},w=["innerHTML"];function O(t,x,a,e,n,i){return _(),d("div",g,[m("div",{class:"markdown-content",style:{margin:"10px min(4vw, 40px)"},innerHTML:t.html},null,8,w)])}const P=u(l,[["render",O]]);export{P as default};
